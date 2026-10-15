@@ -1,0 +1,43 @@
+/*
+    Author: Maria Albano
+    Date: October 15, 2026
+    Project: Campus Life Super App
+    Description: Custom website colors and styling.
+*/
+
+/* Website color palette */
+:root {
+    --primary-purple: #542B87;
+    --dark-purple: #292052;
+    --light-lavender: #F3EEFC;
+    --gold: #E5AC22;
+    --light-cream: #FFF8EA;
+    --white: #FFFFFF;
+}
+
+/* General website styling */
+body {
+    background-color: var(--white);
+    color: var(--dark-purple);
+    font-family: Arial, sans-serif;
+}
+
+/* Website header */
+header {
+    background-color: var(--dark-purple);
+    color: var(--white);
+    padding: 25px;
+}
+
+/* Section headings */
+h2 {
+    color: var(--primary-purple);
+}
+
+/* Website footer */
+footer {
+    background-color: var(--dark-purple);
+    color: var(--white);
+    padding: 20px;
+    text-align: center;
+}
