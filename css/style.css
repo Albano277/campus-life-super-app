@@ -5,7 +5,21 @@
     Description: Custom website colors and styling.
 */
 
-/* Website color palette */
+/*
+    Website Color Palette
+    Author: Maria Albano
+
+    I selected purple, lavender, gold, and cream
+    to create a welcoming, student-friendly website.
+
+    Purple: Header, footer, and headings.
+    Lavender: Campus Events section.
+    Gold and Cream: Campus Dining section.
+
+    Accessibility Testing Resource:
+    WebAIM Contrast Checker
+    https://webaim.org/resources/contrastchecker/
+*/
 :root {
     --primary-purple: #542B87;
     --dark-purple: #292052;
@@ -40,4 +54,94 @@ footer {
     color: var(--white);
     padding: 20px;
     text-align: center;
+}
+/* Campus Events section */
+#events-preview {
+    background-color: var(--light-lavender);
+    padding: 30px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+/* Campus Dining section */
+#dining-preview {
+    background-color: var(--light-cream);
+    padding: 30px;
+    margin: 20px;
+    border-radius: 15px;
+}
+/* Events and Dining buttons */
+#events-preview a,
+#dining-preview a {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 10px;
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Purple Events button */
+#events-preview a {
+    background-color: var(--primary-purple);
+}
+
+/* Gold Dining button */
+#dining-preview a {
+    background-color: var(--gold);
+    color: var(--dark-purple);
+}
+
+/* Keyboard accessibility */
+#events-preview a:focus-visible,
+#dining-preview a:focus-visible {
+    outline: 3px solid var(--dark-purple);
+    outline-offset: 3px;
+}
+/* Main navigation menu */
+nav {
+    background-color: var(--white);
+    padding: 15px 25px;
+    display: flex;
+    gap: 25px;
+}
+
+/* Navigation links */
+nav a {
+    color: var(--dark-purple);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Navigation hover and keyboard focus */
+nav a:hover,
+nav a:focus-visible {
+    color: var(--primary-purple);
+    text-decoration: underline;
+}
+/* Main navigation menu */
+nav {
+    background-color: #FFFFFF;
+    padding: 15px 25px;
+    display: flex;
+    gap: 25px;
+}
+
+/* Navigation links */
+nav a {
+    color: #292052;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Navigation hover effect */
+nav a:hover {
+    color: #542B87;
+    text-decoration: underline;
+}
+
+/* Keyboard accessibility */
+nav a:focus-visible {
+    outline: 2px solid #542B87;
+    outline-offset: 4px;
 }
