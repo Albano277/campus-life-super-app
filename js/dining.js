@@ -58,7 +58,7 @@ fetch(url)
 })
 .catch(error => {
     diningResults.textContent =
-        "Could not load dining locations. Please try again.";
+    "Dining search is currently unavailable. This feature is still being developed for the final project.";
     console.error(error);
 });
 });
