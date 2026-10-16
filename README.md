@@ -21,7 +21,7 @@ This project was created for my Web Development course at American International
 Introduces the Campus Life Super App and provides navigation to the Events and Dining pages.
 
 ### Events Page
-Allows users to search for events by city using the Ticketmaster Discovery API. The API integration is implemented, but the published version currently uses a placeholder API key.
+The Events page allows users to search for upcoming events by city using the Ticketmaster Discovery API. Event names, dates, and links are displayed dynamically using JavaScript.
 
 ### Dining Page
 Allows users to select a Springfield-area college and search for nearby restaurants and cafés. The dining API integration is still in development.
@@ -50,7 +50,7 @@ Website: https://albano277.github.io/campus-life-super-app/
 GitHub Repository: https://github.com/Albano277/campus-life-super-app
 
 ## Future Improvements
-- Complete the Events API integration for the published website.
+- Add event categories and additional search filters.
 - Complete the Dining API integration.
 - Add campus and dining images.
 - Improve accessibility and mobile responsiveness.
