@@ -39,9 +39,29 @@
         <section class="container my-4">
             <h2>Campus Events</h2>
             <p>
-                Discover upcoming events and activities
-                near Springfield, Massachusetts.
+                <p>Discover upcoming concerts, sports, and entertainment events in cities across the United States.</p>
             </p>
+            <!-- Events Search Section -->
+<div class="mb-3">
+    <label for="event-search" class="form-label">
+        Search for Events
+    </label>
+
+    <input
+        type="text"
+        id="event-search"
+        class="form-control"
+        placeholder="Enter a city"
+    >
+</div>
+
+<!-- Search Button -->
+<button id="search-button" class="btn btn-primary">
+    Search Events
+</button>
+
+<!-- API Results -->
+<div id="events-results" class="row mt-4"></div>
         </section>
     </main>
 
@@ -50,6 +70,8 @@
         <p>&copy; 2026 Campus Life Super App. All rights reserved.</p>
         <p>Created by Maria Albano</p>
     </footer>
+<!-- JavaScript for Events page -->
+<script src="js/events.js"></script>
 
 </body>
 </html>
