@@ -10,7 +10,7 @@ console.log("Events JavaScript is connected!");
 // Ticketmaster API endpoint
 const apiUrl = "https://app.ticketmaster.com/discovery/v2/events.json";
 // Ticketmaster API key for searching events
-const apiKey = "YOUR_TICKETMASTER_API_KEY";
+const apiKey = "pGAOALpDfzQEbIxAWYmEO9R5ErfsSM71";
 // Get the search button and input field
 const searchButton = document.getElementById("search-button");
 const eventSearch = document.getElementById("event-search");
