@@ -145,3 +145,26 @@ nav a:focus-visible {
     outline: 2px solid #542B87;
     outline-offset: 4px;
 }
+/* Responsive design for tablets and mobile phones */
+@media (max-width: 768px) {
+
+    /* Stack navigation links on smaller screens */
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    /* Reduce header spacing on smaller screens */
+    header {
+        padding: 15px;
+        text-align: center;
+    }
+
+    /* Adjust homepage sections for smaller screens */
+    #events-preview,
+    #dining-preview {
+        margin: 10px;
+        padding: 20px;
+    }
+}
