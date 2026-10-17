@@ -44,6 +44,14 @@ const query = `
 const url = "https://overpass.private.coffee/api/interpreter?data="
     + encodeURIComponent(query);
 
+/*
+ * The OpenStreetMap Overpass API is currently not returning
+ * dining results as expected. I discussed this issue with
+ * my professor and plan to replace this API with a more
+ * reliable option. The current code is being kept for
+ * reference until the new API is implemented and tested. 
+ */
+
 fetch(url)
 .then(response => {
     if (!response.ok) {
