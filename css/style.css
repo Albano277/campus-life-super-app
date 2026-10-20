@@ -70,9 +70,19 @@ footer {
     margin: 20px;
     border-radius: 15px;
 }
-/* Events and Dining buttons */
+
+/* Student Resources section */
+#resources-preview {
+    background-color: var(--light-cream);
+    padding: 30px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+/* Events, Dining, and Student Resources buttons */
 #events-preview a,
-#dining-preview a {
+#dining-preview a,
+#resources-preview a {
     display: inline-block;
     padding: 12px 24px;
     border-radius: 10px;
@@ -91,10 +101,15 @@ footer {
     background-color: var(--gold);
     color: var(--dark-purple);
 }
+/* Student Resources buttons */
+#resources-preview a {
+    background-color: var(--dark-purple);
+}
 
 /* Keyboard accessibility */
 #events-preview a:focus-visible,
-#dining-preview a:focus-visible {
+#dining-preview a:focus-visible,
+#resources-preview a:focus-visible {
     outline: 3px solid var(--dark-purple);
     outline-offset: 3px;
 }
@@ -163,8 +178,18 @@ nav a:focus-visible {
 
     /* Adjust homepage sections for smaller screens */
     #events-preview,
-    #dining-preview {
+    #dining-preview,
+    #resources-preview {
         margin: 10px;
         padding: 20px;
     }
+}
+/* Keep homepage images responsive without cropping */
+#events-preview img,
+#dining-preview img,
+#resources-preview img {
+    max-width: 100%;
+    height: auto;
+    max-height: 350px;
+    object-fit: contain;
 }

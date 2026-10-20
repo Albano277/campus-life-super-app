@@ -7,6 +7,8 @@
 
 // Test that JavaScript is connected
 console.log("Dining JavaScript is connected!");
+/// Geoapify Places API configuration
+const geoapifyUrl = "https://api.geoapify.com/v2/places";
 // College locations: latitude and longitude
 const colleges = {
     aic: [42.1127, -72.5583],
@@ -30,28 +32,14 @@ const location = colleges[collegeSelect.value];
 const latitude = location[0];
 const longitude = location[1];
 
-// Search for restaurants and cafes within 1500 meters
-const query = `
-    [out:json][timeout:25];
-    (
-        node["amenity"~"^(restaurant|cafe|fast_food)$"]
-        (around:1500,${latitude},${longitude});
-    );
-    out body;
-`;
-
-// Request dining locations using GET
-const url = "https://overpass.private.coffee/api/interpreter?data="
-    + encodeURIComponent(query);
-
-/*
- * The OpenStreetMap Overpass API is currently not returning
- * dining results as expected. I discussed this issue with
- * my professor and plan to replace this API with a more
- * reliable option. The current code is being kept for
- * reference until the new API is implemented and tested. 
- */
-
+// Search for restaurants and cafes within 5000 meters using Geoapify.
+const url = geoapifyUrl +
+    "?categories=catering.restaurant,catering.cafe" +
+    "&filter=circle:" + longitude + "," + latitude + ",5000" +
+    "&limit=20" +
+    "&apiKey=" + "b6d5bf71fc40437ab2d27ad10c350bbe"; 
+ 
+// Request nearby restaurant data from the Geoapify API.
 fetch(url)
 .then(response => {
     if (!response.ok) {
@@ -62,7 +50,13 @@ fetch(url)
 .then(data => {
     console.log("Dining locations:", data);
     diningResults.textContent =
-        "Found " + data.elements.length + " nearby dining locations.";
+        "Found " + data.features.length + " nearby dining locations.";
+        // Display the name of each restaurant.
+data.features.forEach(place => {
+    const restaurant = document.createElement("p");
+    restaurant.textContent = place.properties.name || place.properties.address_line1 || "Dining location";
+    diningResults.appendChild(restaurant);
+});
 })
 .catch(error => {
     diningResults.textContent =

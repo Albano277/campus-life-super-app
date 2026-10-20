@@ -11,7 +11,7 @@ This project was created for my Web Development course at American International
 - Bootstrap 5
 - JavaScript
 - Ticketmaster Discovery API
-- OpenStreetMap Overpass API (in development)
+- Geoapify Places API
 - Git and GitHub
 - GitHub Pages
 
@@ -24,16 +24,14 @@ Introduces the Campus Life Super App and provides navigation to the Events and D
 The Events page allows users to search for upcoming events by city using the Ticketmaster Discovery API. Event names, dates, and links are displayed dynamically using JavaScript.
 
 ### Dining Page
-Allows users to select a Springfield-area college and search for nearby restaurants and cafés. The dining API integration is still in development.
-
+Allows users to select a Springfield-area college and search for nearby restaurants and cafés. The Dining page uses the Geoapify Places API to display nearby dining locations.
 ## How to Use the Website
 1. Open the website using the GitHub Pages link.
 2. Select Home, Events, or Dining from the navigation menu.
 3. On the Events page, enter a city to search for events.
 4. On the Dining page, choose a college and click Find Dining.
 
-Some API features are still being developed for the final project.
-
+The Events and Dining pages use APIs to display live search results.
 ## Setup Instructions
 1. Download or clone this GitHub repository.
 2. Open the project folder in Visual Studio Code.
@@ -51,10 +49,16 @@ GitHub Repository: https://github.com/Albano277/campus-life-super-app
 
 ## Future Improvements
 - Add event categories and additional search filters.
-- Complete the Dining API integration.
-- Add campus and dining images.
+- Add more campus photos and student resources.
+- Add restaurant details such as addresses and opening hours.
 - Improve accessibility and mobile responsiveness.
 - Add more helpful student resources.
+
+## Image Credits
+
+- American International College (AIC): Campus photographs used with permission for this educational project.
+- OpenAI ChatGPT: AI-generated images created for the Campus Dining and Student Resources sections.
+- AIC Library and Academic Support: Official college webpages linked as student resources.
 
 ## Author
 Maria Albano
