@@ -25,6 +25,11 @@ The Events page allows users to search for upcoming events by city using the Tic
 
 ### Dining Page
 Allows users to select a Springfield-area college and search for nearby restaurants and cafés. The Dining page uses the Geoapify Places API to display nearby dining locations.
+
+## Project Screenshots
+### Home Page
+![Campus Life Super App Homepage](images/homepage.png)
+
 ## How to Use the Website
 1. Open the website using the GitHub Pages link.
 2. Select Home, Events, or Dining from the navigation menu.
@@ -32,6 +37,7 @@ Allows users to select a Springfield-area college and search for nearby restaura
 4. On the Dining page, choose a college and click Find Dining.
 
 The Events and Dining pages use APIs to display live search results.
+
 ## Setup Instructions
 1. Download or clone this GitHub repository.
 2. Open the project folder in Visual Studio Code.
@@ -39,6 +45,8 @@ The Events and Dining pages use APIs to display live search results.
 4. Navigate between the three pages.
 
 The Events API requires a valid Ticketmaster Consumer Key.
+
+The Dining page uses the Geoapify Places API and requires a valid Geoapify API key.
 
 ## Deployment
 This website is hosted using GitHub Pages.
@@ -49,10 +57,17 @@ GitHub Repository: https://github.com/Albano277/campus-life-super-app
 
 ## Future Improvements
 - Add event categories and additional search filters.
-- Add more campus photos and student resources.
+- Expand student resources to include tutoring, career services, and additional campus support links.
 - Add restaurant details such as addresses and opening hours.
 - Improve accessibility and mobile responsiveness.
 - Add more helpful student resources.
+
+## Troubleshooting
+
+- If events do not appear, check that a valid city was entered and that the Ticketmaster API is responding.
+- If dining locations do not appear, select a college and try the search again. Results depend on the Geoapify Places API.
+- If the website does not load correctly, refresh the page and check your internet connection.
+- If images or styling are missing, verify that the file paths match the files in the project.
 
 ## Image Credits
 
